@@ -1,0 +1,49 @@
+{
+  "name": "nitro-dapps-examples",
+  "description": "Nitro Based Cross Chain Solidity Contracts",
+  "version": "0.1.1",
+  "author": {
+    "name": "Gaurav Agarwal",
+    "email": "gaurav@routerprotocol.com"
+  },
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.1",
+    "@types/node": "^20.7.1",
+    "pre-commit": "^1.2.2",
+    "prettier": "^2.3.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.13",
+    "ts-node": "^10.7.0",
+    "typechain": "^8.0.0",
+    "typescript": "^5.2.2"
+  },
+  "files": [
+    "/src/interfaces",
+    "src/dexspan"
+  ],
+  "keywords": [
+    "blockchain",
+    "ethereum",
+    "cross-chain",
+    "smart-contracts",
+    "solidity"
+  ],
+  "license": "WTFPL",
+  "private": false,
+  "scripts": {
+    "lint": "prettier \"./**\" --write --ignore-unknown",
+    "compile": "forge compile"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.3",
+    "@openzeppelin/contracts-upgradeable": "^4.9.3",
+    "@routerprotocol/asset-forwarder": "^1.0.4",
+    "@routerprotocol/evm-gateway-contracts": "^1.1.13",
+    "dotenv": "^16.3.1",
+    "fs-extra": "^11.1.1"
+  }
+}
